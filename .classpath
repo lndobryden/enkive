@@ -46,41 +46,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/inetlib.jar"/>
-	<classpathentry kind="lib" path="lib/spring/spring-security-acl-3.1.3.RELEASE.jar" sourcepath="lib/src/spring/spring-security-acl-3.1.3.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/javadoc/spring/spring-security-acl-3.1.3.RELEASE-javadoc.jar"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/spring/spring-security-aspects-3.1.3.RELEASE.jar" sourcepath="lib/src/spring/spring-security-aspects-3.1.3.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/javadoc/spring/spring-security-aspects-3.1.3.RELEASE-javadoc.jar"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/spring/spring-security-config-3.1.3.RELEASE.jar" sourcepath="lib/src/spring/spring-security-config-3.1.3.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/javadoc/spring/spring-security-config-3.1.3.RELEASE-javadoc.jar"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/spring/spring-security-core-3.1.3.RELEASE.jar" sourcepath="lib/src/spring/spring-security-core-3.1.3.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/javadoc/spring/spring-security-core-3.1.3.RELEASE-javadoc.jar"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/spring/spring-security-taglibs-3.1.3.RELEASE.jar" sourcepath="lib/src/spring/spring-security-taglibs-3.1.3.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/javadoc/spring/spring-security-taglibs-3.1.3.RELEASE-javadoc.jar"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/spring/spring-security-web-3.1.3.RELEASE.jar" sourcepath="lib/src/spring/spring-security-web-3.1.3.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/javadoc/spring/spring-security-web-3.1.3.RELEASE-javadoc.jar"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/spring/spring-security-ldap-3.1.3.RELEASE.jar" sourcepath="lib/src/spring/spring-security-ldap-3.1.3.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/javadoc/spring/spring-security-ldap-3.1.3.RELEASE-javadoc.jar"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="lib/quartz-1.8.6.jar"/>
 	<classpathentry kind="lib" path="lib/freemarker-2.3.18.jar"/>
 	<classpathentry kind="lib" path="lib/apache-mime4j-core-0.7.2.jar" sourcepath="lib/src/apache-mime4j-core-0.7.2-sources.jar">
@@ -99,21 +64,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/tika-app-1.3.jar"/>
-	<classpathentry kind="lib" path="lib/spring/spring-web-3.2.2.RELEASE.jar" sourcepath="lib/src/spring/spring-web-3.2.2.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/spring/spring-web-3.2.2.RELEASE-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/spring/spring-tx-3.2.2.RELEASE.jar" sourcepath="lib/src/spring/spring-tx-3.2.2.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/spring/spring-tx-3.2.2.RELEASE-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="lib/spring/spring-surf-1.0.0.jar" sourcepath="/home/dang/src/spring/surf-1.0.0/spring-surf/spring-surf/src"/>
 	<classpathentry kind="lib" path="lib/spring/spring-surf-api-1.0.0.jar"/>
 	<classpathentry kind="lib" path="lib/spring/spring-surf-core-configservice-1.0.0.jar"/>
 	<classpathentry kind="lib" path="lib/spring/spring-surf-core-1.0.0.jar"/>
-	<classpathentry kind="lib" path="lib/spring/spring-webmvc-3.0.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring/spring-webscripts-1.0.0.jar"/>
 	<classpathentry kind="lib" path="lib/spring/spring-webscripts-api-1.0.0.jar"/>
 	<classpathentry kind="var" path="INDRI_INSTALL/share/indri/indri.jar"/>

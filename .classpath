@@ -19,7 +19,6 @@
 	<classpathentry kind="lib" path="lib/axiom-impl-1.2.5.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/cglib-2.2.2.jar"/>
-	<classpathentry kind="lib" path="lib/james-imap/james-server-container-spring-3.0-beta4.jar" sourcepath="/home/lee/.m2/repository/org/apache/james/james-server-container-spring/3.0-beta4/james-server-container-spring-3.0-beta4-sources.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="config"/>
 	<classpathentry kind="lib" path="lib/jetty-all-server-7.4.2.v20110526.jar" sourcepath="lib/src/jetty-7.4.2-src.jar">
@@ -84,12 +83,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/quartz-1.8.6.jar"/>
 	<classpathentry kind="lib" path="lib/freemarker-2.3.18.jar"/>
-	<classpathentry kind="lib" path="lib/james-imap/jutf7-1.0.0.jar"/>
-	<classpathentry kind="lib" path="lib/james-imap/netty-3.7.0.Final.jar" sourcepath="lib/src/james-imap/netty-3.7.0.Final-sources.jar"/>
-	<classpathentry kind="lib" path="lib/james-imap/james-server-protocols-library-3.0-beta4.jar" sourcepath="lib/src/james-imap/james-server-protocols-library-3.0-beta4-sources.jar"/>
-	<classpathentry kind="lib" path="lib/james-imap/james-server-filesystem-api-3.0-beta4.jar"/>
-	<classpathentry kind="lib" path="lib/james-imap/james-server-lifecycle-api-3.0-beta4.jar"/>
-	<classpathentry kind="lib" path="lib/james-imap/james-server-util-3.0-beta4.jar"/>
 	<classpathentry kind="lib" path="lib/apache-mime4j-core-0.7.2.jar" sourcepath="lib/src/apache-mime4j-core-0.7.2-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/apache-mime4j-core-0.7.2-javadoc.jar!/"/>
@@ -124,51 +117,6 @@
 	<classpathentry kind="lib" path="lib/spring/spring-webscripts-1.0.0.jar"/>
 	<classpathentry kind="lib" path="lib/spring/spring-webscripts-api-1.0.0.jar"/>
 	<classpathentry kind="var" path="INDRI_INSTALL/share/indri/indri.jar"/>
-	<classpathentry kind="lib" path="lib/james-imap/apache-james-imap-api-0.3.jar" sourcepath="lib/src/james-imap/apache-james-imap-api-0.3-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/james-imap/apache-james-imap-api-0.3-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/james-imap/apache-james-imap-message-0.3.jar" sourcepath="lib/src/james-imap/apache-james-imap-message-0.3-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/james-imap/apache-james-imap-message-0.3-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/james-imap/apache-james-imap-processor-0.3.jar" sourcepath="lib/src/james-imap/apache-james-imap-processor-0.3-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/james-imap/apache-james-imap-processor-0.3-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/james-imap/apache-james-mailbox-api-0.5.jar" sourcepath="lib/src/james-imap/apache-james-mailbox-api-0.5-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/james-imap/apache-james-mailbox-api-0.5-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/james-imap/james-server-protocols-imap4-3.0-beta4.jar" sourcepath="lib/src/james-imap/james-server-protocols-imap4-3.0-beta4-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/james-imap/james-server-protocols-imap4-3.0-beta4-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/james-imap/protocols-api-1.6.3.jar" sourcepath="lib/src/james-imap/protocols-api-1.6.3-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/james-imap/protocols-api-1.6.3-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/james-imap/protocols-imap-1.6.3.jar" sourcepath="lib/src/james-imap/protocols-imap-1.6.3-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/james-imap/protocols-imap-1.6.3-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/james-imap/protocols-netty-1.6.3.jar" sourcepath="lib/src/james-imap/protocols-netty-1.6.3-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/james-imap/protocols-netty-1.6.3-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/james-imap/apache-james-mailbox-store-0.5.jar" sourcepath="lib/src/james-imap/apache-james-mailbox-store-0.5-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/james-imap/apache-james-mailbox-store-0.5-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="lib/mongo-java-driver-2.11.2.jar" sourcepath="lib/src/mongo-java-driver-2.11.2-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:platform:/resource/enkive2/lib/javadoc/mongo-java-driver-2.11.2-javadoc.jar!/"/>

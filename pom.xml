@@ -548,5 +548,15 @@
 		<artifactId>json-simple</artifactId>
 		<version>1.1</version>
 	</dependency>
+	<dependency>
+		<groupId>gnu.inet</groupId>
+		<artifactId>inetlib</artifactId>
+		<version>1.0</version>
+	</dependency>
+	<dependency>
+		<groupId>gnu.mail</groupId>
+		<artifactId>gnumail-providers</artifactId>
+		<version>1.0</version>
+	</dependency>
   </dependencies>
 </project>

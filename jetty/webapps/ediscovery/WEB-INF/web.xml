@@ -40,4 +40,11 @@
 		<extension>ico</extension>
 		<mime-type>image/x-icon</mime-type>
 	</mime-mapping>
+	
+	<jsp-config>
+		<taglib>  
+			<taglib-uri>http://www.springframework.org/tags/surf</taglib-uri>  
+			<taglib-location>surf.tld</taglib-location>  
+		</taglib>
+	</jsp-config>
 </web-app>

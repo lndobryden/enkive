@@ -35,8 +35,8 @@ import com.linuxbox.enkive.ProductInfo;
 import com.linuxbox.util.EphemeralVersion;
 import com.linuxbox.util.Version;
 import com.linuxbox.util.Version.VersionException;
-import com.sun.org.apache.commons.logging.Log;
-import com.sun.org.apache.commons.logging.LogFactory;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 
 /**

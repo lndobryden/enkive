@@ -21,8 +21,8 @@ package com.linuxbox.enkive;
 
 public interface TestingConstants {
 
-	public static final String TEST_MESSAGE_DIRECTORY = "test/data/unitTestData";
-	public static final String TEST_EMERGENCY_SAVE_ROOT = "test/emergencySaveFiles";
+	public static final String TEST_MESSAGE_DIRECTORY = "src/test/resources/data/unitTestData";
+	public static final String TEST_EMERGENCY_SAVE_ROOT = "src/test/resources/data/emergencySaveFiles";
 
 	public static final String MONGODB_TEST_COLL = "statistics";
 	public static final String MONGODB_TEST_DATABASE = "enkive-test";

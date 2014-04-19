@@ -8,8 +8,6 @@ indri/*
 data/*
 enkive.jar
 /target
-.settings/org.eclipse.m2e.core.prefs
-.settings
 /.classpath
 /.project
 /.springBeans

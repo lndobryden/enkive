@@ -30,6 +30,7 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Calendar;
 import java.util.HashSet;
+import java.util.TimeZone;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -55,6 +56,7 @@ public class EnkiveFilterTest {
 		message = new MessageImpl(filestream);
 		Calendar date = Calendar.getInstance();
 		date.set(1997, 2, 11, 14, 0, 0);
+		date.setTimeZone(TimeZone.getTimeZone("EST"));
 
 		message.setDate(date.getTime());
 		filestream.close();

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright 2013 The Linux Box Corporation.
+ * Copyright 2015 Enkive, LLC.
  *
  * This file is part of Enkive CE (Community Edition).
  *
@@ -18,6 +18,8 @@
  * <http://www.gnu.org/licenses/>.
  *******************************************************************************/
 package com.linuxbox.util.queueservice.mongodb;
+
+import static com.linuxbox.enkive.docstore.DocStoreConstants.QUEUE_ENTRY_INDEX_DOCUMENT;
 
 import java.util.Date;
 import java.util.LinkedHashMap;
@@ -57,7 +59,7 @@ public class JavaQueueService implements QueueService {
 	public void startup() throws QueueServiceException {
 		String identifier;
 		while ((identifier = docStoreService.nextUnindexed()) != null) {
-			enqueue(identifier);
+			enqueue(identifier, -1, QUEUE_ENTRY_INDEX_DOCUMENT);
 		}
 	}
 

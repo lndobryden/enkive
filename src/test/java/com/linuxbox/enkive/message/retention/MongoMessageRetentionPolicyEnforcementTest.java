@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright 2013 The Linux Box Corporation.
+ * Copyright 2015 Enkive, LLC.
  * 
  * This file is part of Enkive CE (Community Edition).
  * 
@@ -95,7 +95,8 @@ public class MongoMessageRetentionPolicyEnforcementTest {
 		searchService.finishSetup();
 		MongoSearchQueryBuilder queryBuilder = new MongoSearchQueryBuilder(m,
 				TestingConstants.MONGODB_TEST_DATABASE,
-				TestingConstants.MONGODB_TEST_QUERY_COLLECTION);
+				TestingConstants.MONGODB_TEST_QUERY_COLLECTION,
+				TestingConstants.MONGODB_TEST_WORKSPACE_COLLECTION);
 		queryBuilder.setSearchResultBuilder(new MongoSearchResultBuilder(m,
 				TestingConstants.MONGODB_TEST_DATABASE,
 				TestingConstants.MONGODB_TEST_WORKSPACE_COLLECTION));

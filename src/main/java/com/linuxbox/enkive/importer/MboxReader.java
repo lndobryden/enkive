@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright 2013 The Linux Box Corporation.
+ * Copyright 2015 Enkive, LLC.
  *
  * This file is part of Enkive CE (Community Edition).
  *
@@ -88,6 +88,9 @@ public class MboxReader extends AbstractMailboxImporter {
 		if (args.length != 3) {
 			System.err
 					.println("Error: requires command-line arguments representing path, host, and port number");
+			for (String arg : args) {
+				System.err.println(arg);
+			}
 			System.exit(1);
 		}
 

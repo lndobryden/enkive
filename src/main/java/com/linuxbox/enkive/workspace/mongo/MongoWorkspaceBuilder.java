@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright 2013 The Linux Box Corporation.
+ * Copyright 2015 Enkive, LLC.
  * 
  * This file is part of Enkive CE (Community Edition).
  * Enkive CE is free software: you can redistribute it and/or modify
@@ -102,7 +102,7 @@ public class MongoWorkspaceBuilder implements WorkspaceBuilder {
 //		workspace.setSearchFolderID((String) workspaceObject
 //				.get(MongoWorkspaceConstants.SEARCHFOLDERID));
 		BasicDBList searches = (BasicDBList) workspaceObject
-				.get(MongoWorkspaceConstants.SEARCHES);
+				.get(MongoWorkspaceConstants.SEARCH_QUERIES);
 
 		Collection<String> searchUUIDs = new HashSet<String>();
 		Iterator<Object> searchesIterator = searches.iterator();

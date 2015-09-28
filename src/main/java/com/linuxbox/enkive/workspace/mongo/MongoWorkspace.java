@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright 2013 The Linux Box Corporation.
+ * Copyright 2015 Enkive, LLC.
  * 
  * This file is part of Enkive CE (Community Edition).
  * Enkive CE is free software: you can redistribute it and/or modify
@@ -61,7 +61,7 @@ public class MongoWorkspace extends Workspace {
 		workspaceObject.put(MongoWorkspaceConstants.CREATOR, getCreator());
 		workspaceObject.put(MongoWorkspaceConstants.WORKSPACENAME,
 				getWorkspaceName());
-		workspaceObject.put(MongoWorkspaceConstants.SEARCHES,
+		workspaceObject.put(MongoWorkspaceConstants.SEARCH_QUERIES,
 				getSearchUUIDs());
 		workspaceObject.put(MongoWorkspaceConstants.LASTQUERY,
 				getLastQueryUUID());

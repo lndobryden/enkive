@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright 2013 The Linux Box Corporation.
+ * Copyright 2015 Enkive, LLC.
  * 
  * This file is part of Enkive CE (Community Edition).
  * Enkive CE is free software: you can redistribute it and/or modify
@@ -51,7 +51,7 @@ public abstract class EnkiveImapMailboxMapper extends NonTransactionalMapper
 	public void delete(Mailbox<String> mailbox) throws MailboxException {
 
 	}
-
+	
 	@Override
 	public abstract Mailbox<String> findMailboxByPath(MailboxPath mailboxName)
 			throws MailboxException, MailboxNotFoundException;

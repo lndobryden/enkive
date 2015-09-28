@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright 2013 The Linux Box Corporation.
+ * Copyright 2015 Enkive, LLC.
  *
  * This file is part of Enkive CE (Community Edition).
  *
@@ -56,6 +56,7 @@ public abstract class AbstractDocSearchIndexService implements
 		Status status;
 
 		public IndexPullingThread() {
+			setName("Indexer Pulling Thread");
 			status = Status.BEFORE_STARTED;
 
 			// so it's never null

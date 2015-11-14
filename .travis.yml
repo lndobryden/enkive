@@ -1,11 +1,16 @@
 language: java
 
-sudo: required
+addons:
+  apt:
+    packages:
+    - mongodb
 
 install:
-  # Install Ansible.
-  - sudo pip install ansible
-
-script:
-  # Install dependencies for integration testing
-  - sudo ansible-playbook -i "localhost," -c local playbook.yml
+  # Install Indri
+  - wget http://downloads.sourceforge.net/project/lemur/lemur/indri-5.9/indri-5.9.tar.gz
+  - tar -xzvf indri-5.9.tar.gz
+  - cd indri-5.9 && chmod +x configure && ./configure --prefix=$HOME/indri --enable-java --with-javahome=/usr/lib/jvm/java-7-oracle && make && make install
+  
+cache:
+  directories:
+  - $HOME/indri

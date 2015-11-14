@@ -1,15 +1,4 @@
 ---
-- name: Install Oracle JDK7
-  hosts: all
-  sudo: yes
-  
-  tasks:
-  - command: apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
-  - apt_repository: repo='deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' state=present
-  - shell: echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
-  - apt: pkg=oracle-java7-installer state=latest update-cache=yes force=yes
-  - apt: pkg=oracle-java7-set-default state=present
-
 - name: Install Mongo
   hosts: all
   sudo: yes

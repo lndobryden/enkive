@@ -4,8 +4,8 @@ sudo: required
 
 install:
   # Install Ansible.
-  - pip install ansible
+  - sudo pip install ansible
 
 script:
-  # Check the role/playbook's syntax.
-  - ansible-playbook playbook.yml
+  # Install dependencies for integration testing
+  - sudo ansible-playbook playbook.yml

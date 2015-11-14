@@ -5,9 +5,9 @@ services:
 
 install:
   # Install Indri
-  - wget 'http://downloads.sourceforge.net/project/lemur/lemur/indri-5.9/indri-5.9.tar.gz'
+  - wget --content-disposition http://sourceforge.net/projects/lemur/files/lemur/indri-5.9/indri-5.9.tar.gz/download
   - tar -xzvf indri-5.9.tar.gz
-  - cd indri-5.9 && chmod +x configure && ./configure --prefix=$HOME/indri --enable-java --with-javahome=/usr/lib/jvm/java-7-oracle && make && make install
+  - cd indri-5.9 && chmod +x configure && ./configure --prefix=$HOME/indri --enable-java --with-javahome=$JAVA_HOME && make && make install
   
 cache:
   apt: true

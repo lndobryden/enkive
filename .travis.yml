@@ -8,4 +8,4 @@ install:
 
 script:
   # Install dependencies for integration testing
-  - sudo ansible-playbook playbook.yml
+  - sudo ansible-playbook -i "localhost," -c local playbook.yml

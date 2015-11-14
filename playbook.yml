@@ -1,0 +1,40 @@
+---
+- name: Install Oracle JDK7
+  hosts: all
+  sudo: yes
+  
+  tasks:
+  - command: apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
+  - apt_repository: repo='deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' state=present
+  - shell: echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
+  - apt: pkg=oracle-java7-installer state=latest update-cache=yes force=yes
+  - apt: pkg=oracle-java7-set-default state=present
+
+- name: Install Mongo
+  hosts: all
+  sudo: yes
+
+  tasks:
+
+  - command: apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+  - apt_repository: repo='deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/3.0 main' state=present
+  - apt: pkg=mongodb-org state=present update_cache=yes
+  - service: name=mongod state=started
+
+- name: Install Indri
+  hosts: all
+  sudo: yes
+  
+  tasks:
+  - apt: pkg=swig state=present
+  - apt: pkg=zlib1g state=present
+  - apt: pkg=zlib1g-dev state=present
+  - file: path=/opt/indri-5.9 state=directory mode=0755
+  - file: path=/opt/indri state=directory mode=0755
+  - get_url: url=http://downloads.sourceforge.net/project/lemur/lemur/indri-5.9/indri-5.9.tar.gz dest=/opt/indri-5.9/indri-5.9.tar.gz mode=0440
+  - unarchive: src=/opt/indri-5.9/indri-5.9.tar.gz dest=/opt/indri-5.9 copy=no
+  - command: chmod +x configure chdir=/opt/indri-5.9/indri-5.9
+  - command: ./configure --prefix=/opt/indri --enable-java --with-javahome=/usr/lib/jvm/java-7-oracle chdir=/opt/indri-5.9/indri-5.9
+  - command: make chdir=/opt/indri-5.9/indri-5.9
+  - command: make install chdir=/opt/indri-5.9/indri-5.9
+  

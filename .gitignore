@@ -13,3 +13,4 @@ enkive.jar
 /.springBeans
 /data
 /.settings
+.vagrant

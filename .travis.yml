@@ -1,9 +1,7 @@
 language: java
 
-addons:
-  apt:
-    packages:
-    - mongodb
+services:
+  - mongodb
 
 install:
   # Install Indri
@@ -12,5 +10,8 @@ install:
   - cd indri-5.9 && chmod +x configure && ./configure --prefix=$HOME/indri --enable-java --with-javahome=/usr/lib/jvm/java-7-oracle && make && make install
   
 cache:
+  apt: true
+  maven: true
   directories:
-  - $HOME/indri
+  - '$HOME/indri'
+  - '$HOME/.m2/repository'

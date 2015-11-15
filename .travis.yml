@@ -3,7 +3,7 @@ language: java
 services:
   - mongodb
 
-install:
+before_install:
   # Install Indri
   - wget http://downloads.sourceforge.net/project/lemur/lemur/indri-5.9/indri-5.9.tar.gz
   - tar -xzvf indri-5.9.tar.gz

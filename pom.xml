@@ -7,10 +7,31 @@
 	<properties>
 		<spring.version>3.2.2.RELEASE</spring.version>
 		<spring.security.version>3.1.3.RELEASE</spring.security.version>
-		<indri.directory>/opt/indri</indri.directory>
 		<indri.lib.directory>${indri.directory}/lib</indri.lib.directory>
 		<jdk.version>1.6</jdk.version>
 	</properties>
+	<profiles>
+	  <profile>
+	    <id>default</id>
+	    <activation>
+	      <activeByDefault>true</activeByDefault>
+	    </activation>
+	    <properties>
+	    	<indri.directory>/opt/indri</indri.directory>
+	    </properties>
+	  </profile>
+	  <profile>
+	  	<id>travis</id>
+	    <activation>
+	      <file>
+	        <exists>/home/travis</exists>
+	      </file>
+	    </activation>
+	    <properties>
+	    	<indri.directory>/home/travis</indri.directory>
+	    </properties>
+	  </profile>
+	</profiles>
 	<repositories>
 		<repository>
 			<id>enkive.local</id>

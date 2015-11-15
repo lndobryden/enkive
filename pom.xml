@@ -28,7 +28,7 @@
 	      </file>
 	    </activation>
 	    <properties>
-	    	<indri.directory>/home/travis</indri.directory>
+	    	<indri.directory>/home/travis/indri</indri.directory>
 	    </properties>
 	  </profile>
 	</profiles>

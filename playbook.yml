@@ -34,7 +34,7 @@
   - get_url: url=http://downloads.sourceforge.net/project/lemur/lemur/indri-5.9/indri-5.9.tar.gz dest=/opt/indri-5.9/indri-5.9.tar.gz mode=0440
   - unarchive: src=/opt/indri-5.9/indri-5.9.tar.gz dest=/opt/indri-5.9 copy=no
   - command: chmod +x configure chdir=/opt/indri-5.9/indri-5.9
-  - command: ./configure --prefix=/opt/indri --enable-java --with-javahome=/usr/lib/jvm/java-7-oracle chdir=/opt/indri-5.9/indri-5.9
+  - command: ./configure --prefix=/vagrant/indri --enable-java --with-javahome=/usr/lib/jvm/java-7-oracle chdir=/opt/indri-5.9/indri-5.9
   - command: make chdir=/opt/indri-5.9/indri-5.9
   - command: make install chdir=/opt/indri-5.9/indri-5.9
   

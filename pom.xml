@@ -17,7 +17,7 @@
 	      <activeByDefault>true</activeByDefault>
 	    </activation>
 	    <properties>
-	    	<indri.directory>/opt/indri</indri.directory>
+	    	<indri.directory>${basedir}/indri</indri.directory>
 	    </properties>
 	  </profile>
 	  <profile>
@@ -97,7 +97,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
-			<artifactId>httpclient</artifactId>
+			<artifactId>httpcore</artifactId>
 			<version>4.3.3</version>
 		</dependency>
 		<dependency>

@@ -10,6 +10,9 @@ before_install:
   - pushd indri-5.9 && chmod +x configure && ./configure --prefix=$HOME/indri --enable-java --with-javahome=$JAVA_HOME && make && make install
   - popd
   
+after_success:
+  - mvn clean test jacoco:report coveralls:report
+  
 cache:
   apt: true
   maven: true

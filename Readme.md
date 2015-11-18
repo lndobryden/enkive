@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/lndobryden/enkive.svg?branch=master)](https://travis-ci.org/lndobryden/enkive)
+
+[![Coverage Status](https://coveralls.io/repos/lndobryden/enkive/badge.svg?branch=master&service=github)](https://coveralls.io/github/lndobryden/enkive?branch=master)
+
 #Spring Tool Suite IDE - Development Envrionment Setup Instructions
 
 1. Download STS	

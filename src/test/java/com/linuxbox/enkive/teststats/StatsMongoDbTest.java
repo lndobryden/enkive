@@ -273,7 +273,7 @@ public class StatsMongoDbTest {
 	public void dataGTZero() {
 		assertNotNull("in " + MONGODB_TEST_DATABASE + " (data = null)",
 				pointStats.get(STAT_DATA_SIZE));
-		int data = ((Integer) pointStats.get(STAT_DATA_SIZE)).intValue();
+		long data = ((Double) pointStats.get(STAT_DATA_SIZE)).longValue();
 		assertTrue("in " + MONGODB_TEST_DATABASE + " (data = " + data + ") ",
 				data > 0);
 	}
@@ -282,7 +282,7 @@ public class StatsMongoDbTest {
 	public void storageGTZero() {
 		assertNotNull("in " + MONGODB_TEST_DATABASE + " (storage = null)",
 				pointStats.get(STAT_TOTAL_SIZE));
-		int storage = ((Integer) pointStats.get(STAT_TOTAL_SIZE)).intValue();
+		long storage = ((Double) pointStats.get(STAT_TOTAL_SIZE)).longValue();
 		assertTrue("in " + MONGODB_TEST_DATABASE + " (storage = " + storage
 				+ ") ", storage > 0);
 	}
@@ -301,8 +301,8 @@ public class StatsMongoDbTest {
 		assertNotNull("in " + MONGODB_TEST_DATABASE
 				+ " (totalIndexSize = null)",
 				pointStats.get(STAT_TOTAL_INDEX_SIZE));
-		int totalIndexSize = ((Integer) pointStats.get(STAT_TOTAL_INDEX_SIZE))
-				.intValue();
+		long totalIndexSize = ((Double) pointStats.get(STAT_TOTAL_INDEX_SIZE))
+				.longValue();
 		assertTrue("in " + MONGODB_TEST_DATABASE + " (totalIndexSize = "
 				+ totalIndexSize + ") ", totalIndexSize > 0);
 	}
@@ -320,7 +320,7 @@ public class StatsMongoDbTest {
 	public void fileSizeGTZero() {
 		assertNotNull("in " + MONGODB_TEST_DATABASE + " (fileSize = null)",
 				pointStats.get(STAT_FILE_SIZE));
-		int fileSize = ((Integer) pointStats.get(STAT_FILE_SIZE)).intValue();
+		long fileSize = ((Double) pointStats.get(STAT_FILE_SIZE)).longValue();
 		assertTrue("in " + MONGODB_TEST_DATABASE + " (fileSize = " + fileSize
 				+ ") ", fileSize > 0);
 	}

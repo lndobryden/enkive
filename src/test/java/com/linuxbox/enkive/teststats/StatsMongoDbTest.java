@@ -319,8 +319,13 @@ public class StatsMongoDbTest {
 		assertNotNull("in " + MONGODB_TEST_DATABASE
 				+ " (totalIndexSize = null)",
 				pointStats.get(STAT_TOTAL_INDEX_SIZE));
-		long totalIndexSize = ((Double) pointStats.get(STAT_TOTAL_INDEX_SIZE))
-				.longValue();
+		Object returned = pointStats.get(STAT_TOTAL_INDEX_SIZE);
+		Double totalIndexSize = null;
+		if(returned instanceof Double) {
+			totalIndexSize = (Double) returned;
+		} else {
+			totalIndexSize = new Double((Integer) returned);
+		}
 		assertTrue("in " + MONGODB_TEST_DATABASE + " (totalIndexSize = "
 				+ totalIndexSize + ") ", totalIndexSize > 0);
 	}
